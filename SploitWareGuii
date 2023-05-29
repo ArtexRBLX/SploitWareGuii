@@ -1,0 +1,143 @@
+-- Gui to Lua
+
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+
+local Frame = Instance.new("Frame")
+
+local UICorner = Instance.new("UICorner")
+
+local TextBox = Instance.new("TextBox")
+
+local UICorner_2 = Instance.new("UICorner")
+
+local getkey = Instance.new("TextButton")
+
+local UICorner_3 = Instance.new("UICorner")
+
+local TextButton = Instance.new("TextButton")
+
+local TextLabel = Instance.new("TextLabel")
+
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+Frame.BackgroundTransparency = 0.500
+
+Frame.Position = UDim2.new(0.442532718, 0, 0.273427457, 0)
+
+Frame.Size = UDim2.new(0, 261, 0, 121)
+
+UICorner.Parent = Frame
+
+TextBox.Parent = Frame
+
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+TextBox.BackgroundTransparency = 0.600
+
+TextBox.Position = UDim2.new(0.114942521, 0, 1.14049578, 0)
+
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+
+TextBox.Font = Enum.Font.SourceSans
+
+TextBox.Text = "KEY HERE"
+
+TextBox.TextColor3 = Color3.fromRGB(255,255,255)
+
+TextBox.TextSize = 14.000
+
+UICorner_2.Parent = TextBox
+
+getkey.Name = "get key"
+
+getkey.Parent = Frame
+
+getkey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+getkey.BackgroundTransparency = 3.000
+
+getkey.Position = UDim2.new(0.114942528, 0, 0.520661175, 0)
+
+getkey.Size = UDim2.new(0, 200, 0, 50)
+
+getkey.Font = Enum.Font.SourceSans
+
+getkey.Text = "Get Key"
+
+getkey.TextColor3 = Color3.fromRGB(255,255,255)
+
+getkey.TextSize = 40.000
+
+getkey.MouseButton1Click:Connect(function()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Copied!"; Text = "PASTE IT ON YOUR BROWSER"; Icon = "rbxassetid://1"; Duration = 10 })
+
+wait(0.7)
+
+setclipboard("https://pastebin.com/pgEgvzGA")
+
+end)
+
+UICorner_3.Parent = getkey
+
+TextButton.Parent = Frame
+
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+TextButton.BackgroundTransparency = 0.600
+
+TextButton.Position = UDim2.new(0.25287357, 0, 1.55371904, 0)
+
+TextButton.Size = UDim2.new(0, 126, 0, 50)
+
+TextButton.Font = Enum.Font.SourceSans
+
+TextButton.Text = "Verify Key"
+
+TextButton.TextColor3 = Color3.fromRGB(255,255,255)
+
+TextButton.TextSize = 14.000
+
+TextButton.MouseButton1Click:Connect(function()
+
+    if TextBox.Text == "sploitware2023" then
+
+	    Frame.Visible = false	    wait(0.5)
+
+	     loadstring(game:HttpGet("https://raw.githubusercontent.com/ArtexRBLX/Yes6566/main/Yes6566"))()
+
+    end
+
+end)
+
+TextLabel.Parent = Frame
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel.BackgroundTransparency = 1.000
+
+TextLabel.Position = UDim2.new(0.114520639, 0, 0.100032896, 0)
+
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+
+TextLabel.Font = Enum.Font.SourceSans
+
+TextLabel.Text = " SploitWare V2 Key"
+
+TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
+
+TextLabel.TextSize = 17.000
